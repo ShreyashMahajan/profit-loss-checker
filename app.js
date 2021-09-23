@@ -26,9 +26,7 @@ function profitAndLossCalculator(inpr,stqty,crnt){
         var profitPer = ((crnt-inpr)/inpr)*100;
         // message
     }else {
-        var a=4;
-        showMessage("hi");
-        showMessage(a);
+       showMessage("No Pain No Gain");
     }
 }
 
