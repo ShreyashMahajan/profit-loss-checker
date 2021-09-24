@@ -26,7 +26,7 @@ function profitAndLossCalculator(inpr,stqty,crnt){
     } else if (crnt > inpr){
         var profit = (crnt-inpr)*stqty;
         var profitPer = ((crnt-inpr)/inpr)*100;
-        // message
+        showMessage(`Your Profit is ${profit}Rs and Percentage is ${profitPer}%`);
     }else {
        showMessage("No Pain No Gain");
     }
