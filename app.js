@@ -10,11 +10,18 @@ function submitHandler(){
     var inprice = Number(initialPrice.value) ;
     var totalStocks = Number(stockQuantity.value);
     var curr = Number(currentPrice.value);
- if(inprice&&totalStocks&&curr){
+    
+ if(inprice&&totalStocks&&curr)
+ {
+    if( (inprice >0 && totalStocks > 0 && curr > 0 ) ) {
     profitAndLossCalculator(inprice,totalStocks,curr);
+} else {
+    showMessage("Please input positive value");
+}
  }else {
      showMessage("Please Input Fields");
  }
+
 }
 
 function profitAndLossCalculator(inpr,stqty,crnt){
